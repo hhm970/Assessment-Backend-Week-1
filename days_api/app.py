@@ -160,6 +160,9 @@ def get_history():
         if number is None:
             number = 5
 
+        if not isinstance(number, int) or number < 0 or number > 20:
+            return jsonify({"error": "Number must be an integer between 1 and 20."}), 400
+
         if number > m:
             return jsonify(ERROR_HISTORY_NUMBER_TOO_BIG), 400
 
