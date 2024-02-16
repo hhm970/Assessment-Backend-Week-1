@@ -11,7 +11,7 @@ def convert_to_datetime(date: str) -> datetime:
     if not isinstance(date, str):
         raise TypeError("'date' needs to be a string.")
 
-    if (len(date) != 10) or (date[2] and date[-5] != "."):
+    if (date[2] and date[-5]) != ".":
         raise ValueError("Unable to convert value to datetime.")
 
     result = datetime.strptime(date, "%d.%m.%Y")

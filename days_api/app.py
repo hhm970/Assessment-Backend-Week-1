@@ -35,7 +35,7 @@ def error_convert_datetime(input):
     Returns an error message for when the input is unable to be converted
     to the desired datetime format
     """
-    if not isinstance(input, str) or (len(input) != 10) or (input[2] and input[-5] != "."):
+    if not isinstance(input, str) or (input[2] and input[-5] != "."):
         return ERROR_CONVERTING_DATES_TO_DATETIME
 
     return None
@@ -79,13 +79,13 @@ def days_between():
 
         data = request.json
 
-        first = data.get("first")
-        last = data.get("last")
+        first = data.get("first", None)
+        last = data.get("last", None)
 
-        if first or last is None:
+        if (first or last) is None or len(data.keys()) != 2:
             return jsonify(ERROR_PATH_PARAMETER_NOT_PROVIDED), 400
 
-        if error_convert_datetime(first) or error_convert_datetime(last) is not None:
+        if (error_convert_datetime(first) or error_convert_datetime(last)) is not None:
             return jsonify(ERROR_CONVERTING_DATES_TO_DATETIME), 400
 
         first_date = convert_to_datetime(first)
