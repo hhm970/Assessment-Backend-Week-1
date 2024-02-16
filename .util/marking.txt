@@ -3,28 +3,21 @@ platform linux -- Python 3.11.8, pytest-8.0.0, pluggy-1.4.0
 rootdir: /home/runner/work/Assessment-Backend-Week-1/Assessment-Backend-Week-1
 collected 85 items
 
-days_api/test_api.py ......FFFFFFFFFFFFFFF........FFFFF.......F.FFFFFFFF [ 60%]
+days_api/test_api.py ......FFFFFFFFFFFFFFF..F.....FFFFF.......F.FFFFFFFF [ 60%]
 FFF.FFFFF                                                                [ 70%]
-days_api/test_date_functions.py ...F.FFFFFF..............                [100%]
+days_api/test_date_functions.py ...F.....................                [100%]
 
-======================== 44 failed, 41 passed in 0.32s =========================
+======================== 39 failed, 46 passed in 0.30s =========================
 ************* Module app
-days_api/app.py:37:0: C0301: Line too long (102/100) (line-too-long)
-days_api/app.py:41:0: W0604: Using the global statement at the module level (global-at-module-level)
-days_api/app.py:77:12: W0101: Unreachable code (unreachable)
-days_api/app.py:167:8: W0621: Redefining name 'app_history' from outer scope (line 42) (redefined-outer-name)
-days_api/app.py:149:16: E0601: Using variable 'app_history' before assignment (used-before-assignment)
-days_api/app.py:154:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
-days_api/app.py:167:22: R1734: Consider using [] instead of list() (use-list-literal)
-days_api/app.py:140:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+days_api/app.py:29:0: C0301: Line too long (102/100) (line-too-long)
+days_api/app.py:33:27: W0622: Redefining built-in 'input' (redefined-builtin)
+days_api/app.py:52:0: W0604: Using the global statement at the module level (global-at-module-level)
+days_api/app.py:176:8: W0621: Redefining name 'app_history' from outer scope (line 53) (redefined-outer-name)
+days_api/app.py:158:16: E0601: Using variable 'app_history' before assignment (used-before-assignment)
+days_api/app.py:163:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+days_api/app.py:149:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 days_api/app.py:7:0: W0611: Unused Response imported from flask (unused-import)
-************* Module date_functions
-days_api/date_functions.py:15:0: C0325: Unnecessary parens after 'raise' keyword (superfluous-parens)
-days_api/date_functions.py:34:0: C0301: Line too long (103/100) (line-too-long)
-days_api/date_functions.py:11:7: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
-days_api/date_functions.py:28:22: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
-days_api/date_functions.py:43:7: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.27/10 (previous run: 9.27/10, +0.00)
+Your code has been rated at 9.52/10 (previous run: 9.52/10, +0.00)
 
