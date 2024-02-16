@@ -7,14 +7,14 @@ days_api/test_api.py ....F...F....................FFFFF.........FFFFFFFF [ 60%]
 FFF.FFFF.                                                                [ 70%]
 days_api/test_date_functions.py ...F.....................                [100%]
 
-======================== 23 failed, 62 passed in 0.28s =========================
+======================== 23 failed, 62 passed in 0.27s =========================
 ************* Module app
 days_api/app.py:29:0: C0301: Line too long (102/100) (line-too-long)
 days_api/app.py:33:27: W0622: Redefining built-in 'input' (redefined-builtin)
 days_api/app.py:52:0: W0604: Using the global statement at the module level (global-at-module-level)
-days_api/app.py:176:8: W0621: Redefining name 'app_history' from outer scope (line 53) (redefined-outer-name)
+days_api/app.py:179:8: W0621: Redefining name 'app_history' from outer scope (line 53) (redefined-outer-name)
 days_api/app.py:158:16: E0601: Using variable 'app_history' before assignment (used-before-assignment)
-days_api/app.py:163:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+days_api/app.py:166:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
 days_api/app.py:149:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 days_api/app.py:7:0: W0611: Unused Response imported from flask (unused-import)
 
