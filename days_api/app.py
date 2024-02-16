@@ -166,13 +166,12 @@ def get_history():
         if number > m:
             return jsonify(ERROR_HISTORY_NUMBER_TOO_BIG), 400
 
-        else:
-            i = m - number + 1
-            result = app_history[i:]
+        i = m - number + 1
+        result = app_history[i:]
 
-            add_to_history(request)
+        add_to_history(request)
 
-            return jsonify(result), 200
+        return jsonify(result), 200
 
     if request.method == "DELETE":
 
